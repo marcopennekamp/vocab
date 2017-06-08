@@ -1,4 +1,4 @@
-CREATE TABLE users (
+CREATE TABLE account (
   id bigserial PRIMARY KEY,
   name varchar(100),
   email varchar(100),
