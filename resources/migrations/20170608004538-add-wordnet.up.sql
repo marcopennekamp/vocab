@@ -1,10 +1,10 @@
 -- https://sourceforge.net/projects/wnsql/
 
 -- Formerly: n = noun, v = verb, a = adjective, r = adverb, s = adjective satellite
-CREATE TYPE word_type AS ENUM ('noun','verb','adjective','adverb','adjective satellite');
+CREATE TYPE word_type AS ENUM ('noun', 'verb', 'adjective', 'adverb', 'adjective satellite');
 
 -- Formerly: a = attributive, p = predicate, ip = immediately postnominal
-CREATE TYPE adjective_position AS ENUM ('attributive','predicate','immediately postnominal');
+CREATE TYPE adjective_position AS ENUM ('attributive', 'predicate', 'immediately postnominal');
 
 -- Formerly: words
 CREATE TABLE wn_word (
