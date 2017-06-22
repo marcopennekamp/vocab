@@ -12,3 +12,9 @@ profiles.clj
 /log
 .idea
 *.iml
+Capstanfile
+Procfile
+vocab-wn-data.sql
+wn-constraints.sql
+wn-data.sql
+wn-schema.sql
