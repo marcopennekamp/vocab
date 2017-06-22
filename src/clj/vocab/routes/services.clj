@@ -23,7 +23,7 @@
   [_ binding acc]
   (update-in acc [:letks] into [binding `(:identity ~'+compojure-api-request+)]))
 
-(s/defschema User
+(s/defschema Account
   {:id         Long
    :name       String
    :email      String
@@ -43,14 +43,14 @@
        (ok {:user user}))
 
   (context "/api" []
-    (context "/user" []
-      :tags ["user"]
+    (context "/account" []
+      :tags ["account"]
 
       (GET "/:id" []
-        :return       User
-        :path-params  [id :- Long]
-        :summary      "Return information about the user with the specific id."
-        (ok (db/get-user {:id id}))))
+        :return Account
+        :path-params [id :- Long]
+        :summary "Return information about the account with the specific id."
+        (ok (db/get-account {:id id}))))
 
     (context "/math" []
       :tags ["math"]

@@ -21,7 +21,7 @@
            :start (conman/connect! {:jdbc-url (env :database-url)})
            :stop (conman/disconnect! *db*))
 
-(conman/bind-connection *db* "sql/user.sql")
+(conman/bind-connection *db* "sql/account.sql")
 
 
 ;; Transforms a HugSQL result from snake case to kebab case.
